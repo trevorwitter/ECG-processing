@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from scipy.signal import butter, lfilter, freqz
+import pywt
 
 class ecg_wavelet():
     def __init__(self, df, sample_rate=10000, hr_max=200):
